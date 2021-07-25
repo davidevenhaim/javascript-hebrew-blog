@@ -1,1 +1,0 @@
-{"ast":null,"code":"export default Object.freeze({\n  ABOUT_ME: \"/aboutme\",\n  IMAGES: \"/images/posts\",\n  ICONS: \"/public/images/icons\",\n  POSTS: \"/posts\",\n  POST_CONTENT: \"/content/posts\"\n});","map":null,"metadata":{},"sourceType":"module"}

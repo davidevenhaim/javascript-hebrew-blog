@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport ProgrammingIcon from \"../../components/about-me/programming-icon\";\n\nfunction AboutMePage(_ref) {\n  var iconNames = _ref.iconNames;\n  return /*#__PURE__*/_jsx(\"div\", {});\n}\n\nexport var __N_SSG = true;\nexport default AboutMePage;","map":null,"metadata":{},"sourceType":"module"}
