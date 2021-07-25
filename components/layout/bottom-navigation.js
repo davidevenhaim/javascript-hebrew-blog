@@ -9,7 +9,7 @@ function BottomNavigation() {
     <footer className={classes.header}>
       <ul>
         <li>
-          <Link href="https://www.linkedin.com/in/david-abenhaim-0657bb1a5/">
+          <Link href={process.env.linkedin}>
             <a target="_blank">
               <Image
                 alt="linkedin"
