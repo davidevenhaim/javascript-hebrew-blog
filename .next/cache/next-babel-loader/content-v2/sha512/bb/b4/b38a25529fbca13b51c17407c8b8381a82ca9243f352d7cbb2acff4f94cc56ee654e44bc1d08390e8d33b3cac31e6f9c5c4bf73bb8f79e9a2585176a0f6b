@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport classes from \"./logo.module.css\";\n\nfunction logo() {\n  return /*#__PURE__*/_jsx(\"div\", {\n    className: classes.logo,\n    children: \"David's blog\"\n  });\n}\n\nexport default logo;","map":null,"metadata":{},"sourceType":"module"}

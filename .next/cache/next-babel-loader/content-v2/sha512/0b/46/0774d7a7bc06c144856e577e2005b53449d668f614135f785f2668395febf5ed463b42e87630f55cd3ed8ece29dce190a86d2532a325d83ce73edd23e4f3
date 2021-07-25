@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport AllPosts from \"../../components/posts/all-posts\";\n\nfunction AllPostsPage(_ref) {\n  var posts = _ref.posts;\n  return /*#__PURE__*/_jsx(AllPosts, {\n    posts: posts\n  });\n}\n\nexport var __N_SSG = true;\nexport default AllPostsPage;","map":null,"metadata":{},"sourceType":"module"}
