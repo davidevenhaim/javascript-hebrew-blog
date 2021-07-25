@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PostsGrid from "./posts-grid";
 
 import classes from "./all-posts.module.css";

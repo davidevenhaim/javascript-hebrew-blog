@@ -1,14 +1,16 @@
 import { Fragment } from "react";
+import AllPosts from "../components/home-page/all-posts";
 import FeaturedPosts from "../components/home-page/featured-posts";
 import Hero from "../components/home-page/hero";
 
-import { getFeaturedPosts } from "../lib/posts-util";
+import { getFeaturedPosts, getAllPosts } from "../lib/posts-util";
 
-function HomePage({ posts }) {
+function HomePage({ allPosts, featuresPosts }) {
   return (
     <Fragment>
       <Hero />
-      <FeaturedPosts posts={posts} />
+      <FeaturedPosts posts={featuresPosts} />
+      <AllPosts posts={allPosts} />
     </Fragment>
   );
 }
@@ -16,9 +18,10 @@ function HomePage({ posts }) {
 export function getStaticProps() {
   return {
     props: {
-      posts: getFeaturedPosts(),
+      allPosts: getAllPosts(),
+      featuresPosts: getFeaturedPosts(),
     },
-    // revalidate: 6000,
+    revalidate: 6000,
   };
 }
 

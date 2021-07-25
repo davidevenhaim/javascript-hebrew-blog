@@ -30,3 +30,7 @@
     padding: var(--size-8);
   }
 }
+
+.content div {
+  direction: ltr;
+}

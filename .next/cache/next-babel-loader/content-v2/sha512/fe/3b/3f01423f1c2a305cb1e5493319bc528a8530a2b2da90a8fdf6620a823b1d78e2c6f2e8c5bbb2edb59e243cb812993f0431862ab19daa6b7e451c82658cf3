@@ -1,0 +1,1 @@
+{"ast":null,"code":"import fs from \"fs\";\nimport path from \"path\";\nimport routes from \"../components/routes\";\nconst iconsDirectory = path.join(process.cwd() + routes.ICONS + \"/\");\nexport function getIconsFileNames() {\n  return fs.readdirSync(iconsDirectory);\n}","map":null,"metadata":{},"sourceType":"module"}

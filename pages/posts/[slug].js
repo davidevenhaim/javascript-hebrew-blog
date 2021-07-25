@@ -1,17 +1,20 @@
 import PostContent from "../../components/posts/post-details/post-content";
 
-import { getPostData, getPostsFiles } from "../../lib/posts-util";
+import { getPostData, getPostsFiles, getNextPost } from "../../lib/posts-util";
 
-function PostDetailPage({ post }) {
-  return <PostContent post={post} />;
+function PostDetailPage({ post, nextPostSlug }) {
+  return <PostContent post={post} nextPostSlug={nextPostSlug} />;
 }
 
 export function getStaticProps(context) {
   const { slug } = context.params;
+  const curPost = getPostData(slug);
+  const nextPostSlug = getNextPost(slug);
 
   return {
     props: {
-      post: getPostData(slug),
+      post: curPost,
+      nextPostSlug: nextPostSlug,
     },
     revalidate: 600,
   };
