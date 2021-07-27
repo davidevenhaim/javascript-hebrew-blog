@@ -14,7 +14,6 @@ function Hero() {
           layout="responsive"
         />
       </div>
-      <h1>דוד</h1>
     </section>
   );
 }
