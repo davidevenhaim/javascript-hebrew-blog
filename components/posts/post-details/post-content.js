@@ -44,7 +44,7 @@ function PostContent({ post, nextPostSlug }) {
     },
     code(code) {
       const { className, children } = code;
-      const language = className.split("-")[1]; // ex: "js" for javascript
+      const language = className.split("-")[1];
 
       return (
         <div>

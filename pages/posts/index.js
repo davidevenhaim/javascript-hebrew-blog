@@ -1,8 +1,18 @@
+import Head from "next/head";
+
 import AllPosts from "../../components/posts/all-posts";
+
 import { getAllPosts } from "../../lib/posts-util";
 
 function AllPostsPage({ posts }) {
-  return <AllPosts posts={posts} />;
+  return (
+    <>
+      <Head>
+        <title>כל הפוסטים</title>
+      </Head>
+      <AllPosts posts={posts} />
+    </>
+  );
 }
 
 export function getStaticProps() {
