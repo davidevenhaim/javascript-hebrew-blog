@@ -1,6 +1,6 @@
 # JavaScript Blog
 
-## Developed with JavaScript, React & Next.js
+## Developed with JavaScript, React, Next.js & CSS
 
 ### Written in hebrew by David Abenhaim.
 
