@@ -25,7 +25,7 @@ export function getStaticProps(context) {
       post: curPost,
       nextPostSlug: nextPostSlug,
     },
-    revalidate: 600,
+    revalidate: 6000,
   };
 }
 
