@@ -15,10 +15,13 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href={routes.POSTS}>כל הפוסטים</Link>
+            <Link href={routes.POSTS}>בלוג</Link>
           </li>
           <li>
             <Link href={routes.ABOUT_ME}>מי אני</Link>
+          </li>
+          <li>
+            <Link href={routes.MY_PROJECTS}>הפרוייקטים שלי</Link>
           </li>
         </ul>
       </nav>

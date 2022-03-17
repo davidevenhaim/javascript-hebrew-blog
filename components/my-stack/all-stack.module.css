@@ -1,0 +1,39 @@
+.projects {
+  direction: rtl;
+  width: 90%;
+  max-width: 60rem;
+  margin: var(--size-8) auto;
+}
+
+.projects h1 {
+  font-size: var(--size-8);
+  color: var(--color-grey-800);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .projects h1 {
+    font-size: var(--size-16);
+  }
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  align-content: center;
+}
+
+.techList {
+  list-style: none;
+  margin: 0;
+  gap: 1rem;
+  align-content: center;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+  margin-bottom: 7rem;
+}

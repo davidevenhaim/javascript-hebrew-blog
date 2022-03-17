@@ -1,11 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import classes from "./post-item.module.css";
+import TechBox from "./tech-box";
+
+import classes from "./stack-card.module.css";
 import routes from "../routes";
 
-function PostItem({ post }) {
-  const { date, image, slug, summary, title } = post;
+function StackCard({ project }) {
+  const { date, image, link, summary, title, techs } = project;
 
   const formattedDate = new Date(date).toLocaleDateString("he-IL", {
     day: "numeric",
@@ -13,12 +15,11 @@ function PostItem({ post }) {
     year: "2-digit"
   });
 
-  const imagePath = `${routes.POSTS_IMAGES}/${slug}/${image}`;
-  const linkPath = `${routes.POSTS}/${slug}`;
+  const imagePath = `${routes.PROJECTS_IMAGES}/${image}`;
 
   return (
-    <li className={classes.post}>
-      <Link href={linkPath}>
+    <li className={classes.project}>
+      <Link href={link}>
         <a>
           <div className={classes.image}>
             <Image
@@ -39,6 +40,11 @@ function PostItem({ post }) {
             <p>
               {summary}
             </p>
+            <p className={classes.techs}>
+              <ul className={classes.techList}>
+                {techs.map(tech => <TechBox techAlt={tech} />)}
+              </ul>
+            </p>
           </div>
         </a>
       </Link>
@@ -46,4 +52,4 @@ function PostItem({ post }) {
   );
 }
 
-export default PostItem;
+export default StackCard;
