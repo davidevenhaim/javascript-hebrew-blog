@@ -20,7 +20,7 @@ function StackCard({ project }) {
   return (
     <li className={classes.project}>
       <Link href={link}>
-        <a>
+        <a rel="noopener noreferrer" target="_blank">
           <div className={classes.image}>
             <Image
               alt={title}
