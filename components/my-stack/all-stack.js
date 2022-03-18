@@ -46,10 +46,11 @@ const projects = [
 function AllStack() {
   return (
     <section className={classes.projects}>
-      <h1>הפרויקטים שלי</h1>
+      <h1>הטכנולוגיות שלי</h1>
       <ul className={classes.techList}>
         <TechBox all />
       </ul>
+      <h1>הפרויקטים שלי</h1>
       <ul className={classes.grid}>
         {projects.map(project => <StackCard project={project} />)}
       </ul>

@@ -7,30 +7,6 @@ function AboutMePage() {
     <div style={{ textAlign: "center", fontSize: 20 }}>
       <Hero />
       <div style={{ padding: 20 }}>
-        <Image
-          src="/images/icons/react.png"
-          height={100}
-          width={100}
-          alt="React - ריאקט"
-        />
-        <Image
-          src="/images/icons/next.png"
-          height={100}
-          width={100}
-          alt="NextJS - נקסט"
-        />
-        <Image
-          src="/images/icons/node.png"
-          height={100}
-          width={100}
-          alt="Node Js"
-        />
-        <Image
-          src="/images/icons/ts.png"
-          height={100}
-          width={100}
-          alt="TypeScript - טייפסקריפט"
-        />
         <p>אני דוד אבן חיים סטודנט בשנה השלישית בהנדסת תוכנה</p>
         <p>.כרגע עובד בסטארטפ כמתכנת פול סטאק</p>
         <p>
